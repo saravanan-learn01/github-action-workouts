@@ -2,6 +2,7 @@ name: new-workflow file
 
 on: 
  push: 
+ workflow_dispatch: 
 
   inputs:
      number1:
