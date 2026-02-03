@@ -1,0 +1,23 @@
+name: github multi job pipeline
+
+on:
+  push:
+    
+jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout
+          uses: actions/checkout@v4
+        - name: print2
+          run: echo hello
+
+    compile:
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout
+          uses: actions/checkout@v4
+        - name: print
+          run: echo hello
+      
+        
